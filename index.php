@@ -12,10 +12,72 @@
         <title>Cinema</title>
     </head>
     <body>
+        <!--Header-->
+        <?php include_once("form/header"); ?>
 
-    <?php
-    include_once("form/header");
-    ?>
+        <!--Main Content-->
+        <div class="container-fluid">
+            <div class="row text-center alert">
+                <div class="col-12">
+                    <h1 class="dispaly-4">Публичные каналы!</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row padding">
+                <div class="col-md-4">
+                    <div class="card" id="Card">
+                        <img class="card-img-top" src="image/roflanLico.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Roflan</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" id="Card">
+                        <img class="card-img-top"  width="100" src="image/roflanLico.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Roflan</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" id="Card">
+                        <img class="card-img-top"  width="100" src="image/roflanLico.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Roflan</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" id="Card">
+                        <img class="card-img-top"  width="100" src="image/roflanLico.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Roflan</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!--Footer        -->
+        <footer class="container-fluid bg-dark">
+            <div class="row padding text-center">
+                <div class="col-12 social padding">
+                    <h4>Have fun!</h4>
+                </div>
+            </div>
+        </footer>
+        <!--Parser        -->
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

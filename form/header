@@ -1,4 +1,4 @@
-<nav class="navbar navbar-light navbar-expand-md bg-light">
+<nav class="navbar navbar-light navbar-expand-md bg-light sticky-top">
     <header class="container-fluid">
         <a href="#" class="navbar-brand">
             <img src="https://vectr.com/tmp/b7p8bY6tXu/bL0iOs3XU.svg?width=359&height=132.93&select=bL0iOs3XUpage0"
@@ -19,7 +19,7 @@
                     <a href="" class="nav-link">О сервисе</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Войти</a>
+                    <button type="button" class="nav-link btn btn-light " data-toggle="modal" data-target="#exampleModal">Войти</button>
                 </li>
             </ul>
         </div>

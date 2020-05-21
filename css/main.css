@@ -1,10 +1,13 @@
 .Card-Custom{
-    padding-top: 1px;
-    padding-bottom: 2px;
+    margin-top: 1px;
+    margin-bottom: 2px;
 }
 .Card-Custom:hover{
     background-color: rgba(243, 234, 234, 0.17);
     border: #8b1219 solid 1px;
     border-radius: 40px;
     cursor: pointer;
+}
+footer{
+    margin-top: 5px;
 }

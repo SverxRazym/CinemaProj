@@ -29,13 +29,9 @@
 
         </div>
         <!--Footer        -->
-        <footer class="container-fluid bg-dark">
-            <div class="row padding text-center">
-                <div class="col-12 social padding">
-                    <h4>Have fun!</h4>
-                </div>
-            </div>
-        </footer>
+        <?php
+        include_once("form/includeForms.php");
+        ?>
         <!--Parser        -->
         <script src="js/contentCreate.js"></script>
         <!-- Optional JavaScript -->

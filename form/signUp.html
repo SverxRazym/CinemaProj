@@ -2,17 +2,38 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <h5 class="modal-title">Авторизация</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                ...
+                <form>
+                    <div class="form-group">
+                        <label for="LoginSignUp">Логин</label>
+                        <input type="text" class="form-control" id="LoginSignUp" placeholder="Введите логин">
+                    </div>
+                    <div class="form-group">
+                        <label for="EmailSign">Email</label>
+                        <input type="email" class="form-control" id="EmailSign" placeholder="Введите email">
+                    </div>
+                    <div class="form-group">
+                        <label for="PassSignUp">Пароль</label>
+                        <input type="password" class="form-control" id="PassSignUp" placeholder="Введите пароль">
+                    </div>
+                    <div class="form-group">
+                        <label for="PassSignUp">Подтвердите пароль</label>
+                        <input type="password" class="form-control" id="AgreePassSignUp" placeholder="Введите пароль">
+                    </div>
+                    <div class="invalid-feedback" id="invalidSignUp">
+                    </div>
+                </form>
+                <div class="container text-center btn-active-modal">
+                    <button type="button" class="btn btn-primary">Авторизоваться</button>
+                </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+            <div class="modal-footer mx-auto btn-foot">
+                <button type="button" class="btn btn-link btn-foot-btn" data-toggle="modal" data-target="#modalSignIn">Авторизоваться</button>
             </div>
         </div>
     </div>

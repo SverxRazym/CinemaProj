@@ -1,18 +1,32 @@
-<div class="modal fade" id="modalSignUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modalSignIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <h5 class="modal-title">Авторизация</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                ...
+                <form>
+                    <div class="form-group">
+                        <label for="LoginSignIn">Логин</label>
+                        <input type="text" class="form-control" id="LoginSignIn" placeholder="Введите логин">
+                    </div>
+                    <div class="form-group">
+                        <label for="PassSignIn">Пароль</label>
+                        <input type="password" class="form-control" id="PassSignIn" placeholder="Введите пароль">
+                    </div>
+
+                    <div class="invalid-feedback" id="invalidSignIn">
+                    </div>
+                </form>
+                <div class="container text-center btn-active-modal">
+                    <button type="button" class="btn btn-primary">Авторизоваться</button>
+                </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+            <div class="modal-footer mx-auto btn-foot">
+                    <button type="button" class="btn btn-link btn-foot-btn" data-toggle="modal" data-target="#modalSignUp" id="btnToSignIn">Зарегистрироваться</button>
             </div>
         </div>
     </div>

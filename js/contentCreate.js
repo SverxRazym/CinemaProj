@@ -7,6 +7,10 @@ window.onload = function () {
     }
 };
 
+let btn=document.getElementById("btnToSignIn");
+btn.onclick = function () {
+    $('#modalSignIn').modal('hide');
+}
 
 function createCard(title,description,idCard){
     let element = "<div class=\"col-md-3 Card-Custom\" id='" + idCard + "'\n" +

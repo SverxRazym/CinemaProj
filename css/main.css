@@ -23,4 +23,12 @@ footer{
 .bg-darkLight{
     background-color: #cfd0d1;
 }
-
+.btn-Border{
+    border: 0px solid transparent;
+}
+.mainCont{
+    margin-top: 20px;
+}
+.headPage{
+    margin-top: 30px;
+}

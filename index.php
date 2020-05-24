@@ -16,17 +16,10 @@ session_start();
     </head>
     <body>
         <!--Header-->
-        <?php include_once("form/header"); ?>
+        <?php include_once("form/header");?>
 
         <!--Main Content-->
-        <div class="container-fluid">
-            <div class="row text-center alert">
-                <div class="col-12">
-                    <h1 class="dispaly-4">Публичные каналы!</h1>
-                </div>
-            </div>
-        </div>
-        <div class="container">
+        <div class="container mainCont" >
             <div class="row padding" id="Container">
             </div>
 
@@ -41,9 +34,8 @@ session_start();
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <!--Parser        -->
-        <script src="js/contentCreate.js"></script>
-        <script src="js/createPage.js"></script>
-        <script src="js/Listner.js"></script>
+        <script src="js/contentCreate.js" type="module"></script>
+
     </body>
 </html>
 

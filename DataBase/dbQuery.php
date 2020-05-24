@@ -3,7 +3,7 @@ include_once("BaseDB.php");
 function logAuth($login, $password)
 {
     // check data
-    $query = "SELECT * FROM info where login = '$login' AND password = '$password'";
+    $query = "SELECT * FROM Cinema_Users where Login = '$login' AND Password = '$password'";
     $res = mysqli_fetch_row(exQuery($query));
     return $res[0];
 }

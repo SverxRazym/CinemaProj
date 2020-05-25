@@ -13,18 +13,26 @@
                     <a href="/CinemaProj/index.php" class="nav-link">Главная</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/CinemaProj/page.php" class="nav-link">Профиль</a>
-                </li>
-                <li class="nav-item">
                     <a href="" class="nav-link">О сервисе</a>
                 </li>
                 <li class="nav-item" id="Vxod">
-                    <button type="button" class="nav-link btn btn-light btn-Border" data-toggle="modal" data-target="#modalSignIn">Войти</button>
+                    <?php if(!isset($_SESSION["login"])){ ?>
+                    <button type="button" class="btn nav-link btn-light btn-Border" data-toggle="modal" data-target="#modalSignIn">Войти</button>
+                    <?php } else{?>
+                    <button type="button" class="nav-link btn btn-light btn-Border" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                       dsa
+                    </button>
+                    <div id="drop" class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button">Создать старинцу</button>
+                        <button class="dropdown-item" type="button" id="exitOnThis">Выход</button>
+                    </div>
+                    <?php }?>
                 </li>
             </ul>
         </div>
 
     </header>
 </nav>
+
 
 

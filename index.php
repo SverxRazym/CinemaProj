@@ -16,7 +16,7 @@ session_start();
     </head>
     <body>
         <!--Header-->
-        <?php include_once("form/header");?>
+        <?php include_once("form/header.php");?>
 
         <!--Main Content-->
         <div class="container mainCont" >

@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html>
 <head>
@@ -13,7 +16,7 @@
 </head>
 <body>
 <!--Header-->
-<?php include_once("form/header"); ?>
+<?php include_once("form/header.php"); ?>
 <!--Main content-->
 <div class="container-fluid">
     <div class="row headPage">
@@ -40,11 +43,25 @@
     </div>
     <!--    <iframe width="922" height="576" src="https://www.youtube.com/embed/GT77G1loHsI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
     <div id="comment">
-        <div class="row"></div>
-        <div class="row"></div>
-        <div class="row"></div>
-    </div>
+        <div class="row col-6 mx-auto">
+            <div class="input-group">
+                <input type="text" class="form-control" aria-label="Text input with radio button">
+                <div class="input-group-prepend">
 
+                    <button type="button" class="btn btn-primary" id="btnSignIn">Авторизоваться</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="col-6 mx-auto">
+                Exploer 16.10.12
+            </div>
+            <div class="col-6 mx-auto">
+                dasj'asfjl;as.nf;adsklfnd./
+            </div>
+        </div>
+    </div>
 </div>
 
 <!--Footer        -->

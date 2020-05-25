@@ -1,6 +1,6 @@
 function createComment(Title,comment) {
 
 }
-export function f() {
-    console.log("dsa");
+export function loadPage() {
+    console.log(this.id);
 }

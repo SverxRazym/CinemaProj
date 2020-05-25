@@ -1,17 +1,25 @@
 import * as Listner from './Listner.js';
-
+import * as Page from './createPage.js';
 window.onload = () => {
-    let tempElem = $("#Container");
-    for (let i = 0; i < 19; i++) {
-        let temp = "Card" + i;
-        tempElem.append(createCard(temp, "Lorem Ipsum", temp));
-    }
-
+    loadCard();
+    $(".Card-Custom").click(Page.loadPage);
     $("#btnToSignIn").click(function () {
         $('#modalSignIn').modal('hide');
     });
+    $("#exitOnThis").click(Listner.exit);
     $("#btnSignIn").click(Listner.signIn);
+    $("#btnToSignUp").click(function () {
+       $('#modalSignUp').modal('hide');
+    });
+    $("#btnSignUp").click(Listner.signUp());
 };
+
+function loadCard() {
+    for (let i = 0; i < 19; i++) {
+        let temp = "Card" + i;
+        $("#Container").append(createCard(temp, "Lorem Ipsum", temp));
+    }
+}
 
 function createCard(title, description, idCard) {
     let element = "<div class=\"col-4 col-md-3 col-sm-3 Card-Custom\" id='" + idCard + "'\n" +
@@ -24,4 +32,13 @@ function createCard(title, description, idCard) {
         "                    </div>\n" +
         "                </div>";
     return element;
+}
+
+function get_cookie(cookie_name) {
+    var results = document.cookie.match('(^|;) ?' + cookie_name + '=([^;]*)(;|$)');
+
+    if (results)
+        return (unescape(results[2]));
+    else
+        return null;
 }

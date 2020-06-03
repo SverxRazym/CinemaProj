@@ -1,6 +1,4 @@
-function createComment(Title,comment) {
-
-}
 export function loadPage() {
-    console.log(this.id);
+    document.cookie = `room=${this.id}; path=/; expires=Tue, 19 Jan 2038 03:14:07 GMT`;
+    window.location.href = './page.php';
 }

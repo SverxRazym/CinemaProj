@@ -32,3 +32,16 @@ footer{
 .headPage{
     margin-top: 30px;
 }
+.cont-comment{
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    margin: 1rem 0;
+
+}
+.pad-left{
+    padding-left: 1rem;
+}
+.bg-h3-light{
+    background-color: rgba(241, 237, 255, 0.61);
+}

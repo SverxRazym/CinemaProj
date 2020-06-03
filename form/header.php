@@ -19,8 +19,8 @@
                     <?php if(!isset($_SESSION["login"])){ ?>
                     <button type="button" class="btn nav-link btn-light btn-Border" data-toggle="modal" data-target="#modalSignIn">Войти</button>
                     <?php } else{?>
-                    <button type="button" class="nav-link btn btn-light btn-Border" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                       dsa
+                    <button id="btnUser" type="button" class="nav-link btn btn-light btn-Border" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                    <?php echo $_SESSION["login"]?>
                     </button>
                     <div id="drop" class="dropdown-menu dropdown-menu-right">
                         <button class="dropdown-item" type="button">Создать старинцу</button>

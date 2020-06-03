@@ -11,7 +11,7 @@ window.onload = () => {
     $("#btnToSignUp").click(function () {
        $('#modalSignUp').modal('hide');
     });
-    $("#btnSignUp").click(Listner.signUp());
+    $("#btnSignUp").click(Listner.signUp);
 };
 
 function loadCard() {
@@ -32,13 +32,4 @@ function createCard(title, description, idCard) {
         "                    </div>\n" +
         "                </div>";
     return element;
-}
-
-function get_cookie(cookie_name) {
-    var results = document.cookie.match('(^|;) ?' + cookie_name + '=([^;]*)(;|$)');
-
-    if (results)
-        return (unescape(results[2]));
-    else
-        return null;
 }
